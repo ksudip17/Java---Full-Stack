@@ -1,0 +1,260 @@
+Array: 
+
+Collection of Homogeneous data is called Array.
+- It is always initialized by 0.
+
+-----------Structure of Array---------------------
+1.Array declaration area:
+- To define the name of array 
+eg. int[] arr :
+
+2.Aeeay storage Area
+-To store data into element 
+eg. arr = {1,2,3,4,5}
+
+3.Array display area
+-To print data of element
+eg. Systemt.out.println(arr [i] + "");
+
+-------------Types of array-----------
+a) 1D - row and column are not manipulated together.
+b) 2D - row and column are manipulated together.
+	-it is also know as matrics.
+c) Multi-dimensional Array : More than 2 row and column are manipulated together. 
+
+
+
+//program for one dimensional array//
+public class Sudip {
+public static void main (String args[])
+{
+int arr [] =  {1,2,3,4,5};
+int n = arr.length;
+for (int i=0; i<n; i++)
+System.out.println(arr [i] + "");
+}
+}
+
+
+//program to use 1D array by using customized index//
+class muji {
+public static void main (String args[])
+{
+int[] arr;
+arr = new int[5];
+
+arr[0] = 10;
+
+arr[1] = 20;
+
+arr[2] = 30;
+
+arr[3] = 40;
+
+arr[4] = 50;
+
+for (int i=0; i<arr.length; i++)
+System.out.println("Element at index" + i + "is : " + arr[i]);
+}
+}
+
+
+//program to find vowel and consonant//
+public class alpha(
+public static void main (String args[]) {
+char day = 0;
+switch(day)
+{
+case 1: 
+System.out.println("Sunday");
+break;
+case 2: 
+System.out.println("Monday");
+break;
+case 3: 
+System.out.println("Tuesday");
+break;
+case 4: 
+System.out.println("Wednesday");
+break;
+case 5: 
+System.out.println("Thursday");
+break;
+case 6: 
+System.out.println("Friday");
+break;
+case 7: 
+System.out.println("Saturday");
+break;
+default : 
+
+System.out.println("Vakk Muji");
+}
+}
+}
+
+
+public class Sudip {
+public static void main(String args[]) {
+String levelString = "Pro"
+int level = 0;
+
+switch(levelString) {
+case "Bot" : level=1;
+break;
+case "Noob" : level 2;
+break;
+case "Piro" : level 3;
+break;
+default : 
+System.out.println("tw muji TikTok bana");
+break;
+}
+System.out.println("Your level is:" +level);
+}
+}
+
+
+------------------------ Loop-------------
+Benefits:
+- to reduce the size of code.
+- to control the errors.
+- Easy to understood the logic of program by programmer.
+- Easy to predict the output of the code written by dev.
+- To take less space or memory.
+- fast processing of data.
+
+
+Structure of Loop:
+-Initialized :-  int i=0;
+-Condition:- i<arr.length
+-Reinitialized:- i++/ i--
+
+//program//
+
+class muji {
+public static void main (String args[])
+{
+int i = 1;
+for (; i<10 ;)
+
+{
+System.out.println(i);
+i++;
+}
+}
+}
+
+
+//to find the factorial of number //
+
+
+class muji {
+public static void main (String args[])
+{
+    int f=1;
+for (int i=4; i>=1; i--)
+{
+    f=f*i;
+}
+System.out.println("factorial is = " +f);
+}
+}
+
+
+//while loop//
+
+class muji {
+    public static void main(String args[]) {
+        int i = 1; 
+
+        // Use a while loop to print numbers from 1 to 20
+        while (i <= 20) {
+            System.out.println(i); 
+            i = i + 1; 
+        }
+    }
+}
+
+
+//do while//a
+class muji {
+    public static void main(String args[]) {
+        int i = 1; 
+        do
+        {
+            System.out.println(i); 
+            i++;
+        }
+        while (i <= 20);
+    }
+}
+
+
+//simple calculator//
+import java.util.Scanner;
+
+public class BasicCalculator {
+    public static void main(String args[]) {
+        double num1, num2;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the numbers");
+        
+        num1 = sc.nextDouble();
+        num2 = sc.nextDouble();
+        
+        System.out.println("Enter the operator (+,-,*,/):");
+        
+        char op = sc.next().charAt(0);
+        double o = 0;
+        
+        switch(op) {
+            case '+': 
+                o = num1 + num2;
+                break;
+            case '-':
+                o = num1 - num2;
+                break;
+            case '*':
+                o = num1 * num2;
+                break;
+            case '/':
+                o = num1 / num2;
+                break;
+            default:
+                System.out.println("Muji vakk");
+        }
+        System.out.println("The final result: " + o);
+    }
+}
+
+
+
+
+
+----------------------------------------OOPS---------------------
+//program to create class & object in java//
+
+class Animal {
+    public void dog() {
+        System.out.println("Attack");
+    }
+
+    public static void main(String args[]) {
+        Animal a1 = new Animal(); 
+        a1.dog();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

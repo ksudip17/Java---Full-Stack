@@ -1,0 +1,11 @@
+XML (Extensible Markup Language)
+
+--Features--
+1) To create tree/graphical/Hierarchical/ shape of data structure.
+2)All tag are post define/user define.
+3)All tag are light weight to take less space of memory and fast data processing.
+4)File extension name is called .xml
+5)Connection oriented.
+
+PA1607636
+

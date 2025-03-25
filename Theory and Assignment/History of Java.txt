@@ -1,0 +1,209 @@
+****************History of Java***************
+
+- James Gosling is the developer of Java, and initially, it was called GreenTalk, with the extension .gt, in 1991, developed by Sun Microsystems.  
+- Later, it was called Oak, which is a symbol of strength and is chosen as the national tree of countries like the USA, France, Germany, and Romania.  
+- In 1995, Oak was renamed Java due to a trademark issue with Oak Technologies.  
+- Java's principles, including simplicity, robustness, portability, platform independence, security, high performance, and dynamism, laid the foundation for its development.
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Uses of Java********
+
+- Web Development  
+- Mobile Apps  
+- Enterprise Software  
+- Desktop Apps  
+- Games  
+- Big Data  
+- Cloud Computing  
+- Scientific Apps  
+- IoT  
+- Embedded Systems
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Features of Java******
+
+
+1. Platform Independence
+2. Object-Oriented
+3. Robust & Secure
+4. Multithreading
+5. Automatic Memory Management
+
+It is based on OOPS.
+
+-----------------------------------------------------------------------------------------------------------------
+Class : Group of object is called class.
+Object : It is an instance of class. (reference).
+	- It show the behavior of class.
+	- eg: School is class and principal is object.
+
+-------------------------------------------------------------------------------------------------------------------
+
+Data Types in Java
+
+Primitive Data Types---------------------------------------
+				---Integers 
+						-byte
+						-short
+						-int
+						-long
+	
+				---Floating-Point
+						-float
+						-double
+				---Character
+						-char
+				---Boolean
+						-boolean
+
+Non-primitive Data Types-------------------------------
+	--String
+	--Array
+	--list
+	--set
+	--stack
+	--vector	
+	--Dictionary
+	--All user defined classes.
+
+------------------------------------------------------------------------------------------------------------------------------------
+Data		type		Default Value
+byte		0 		1 byte or 8 bits
+short 	0		2 bytes or 16 bits
+int		0		4 bytes or 32 bits
+long		0		8 bytes or 64 bits
+float		0.0f		4 bytes or 32 bits
+double 	0.0d 	8 bytes or 64 bits
+char 	u0000	2 bytes or 16 bits
+Boolean	FALSE 	1 byte or 2 bytes
+
+------------------------------------------------------------------------------------------------------------------------------------
+Data Type - The kind of data it can hold. For example, int, string, float, char, etc.
+Variable Name - To identify the variable within the scope.
+Value- The data assigned to the variable
+
+Types of Variable
+--Local Variable
+--Instance Variable
+--Static Variables
+---------------------------------------------------------------------------------------------------------------------------------------
+class Rit {
+    public static void main(String args[]) { 
+        int a = 10;
+        float b = 5.5f; 
+        double c;        
+        c = a + b;       
+        System.out.println(c);
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------
+public class PrimitiveTypesExample {
+    public static void main(String args[]) {
+        byte myByte = 100;
+        short myShort = 1000;
+        int myInt = 1000000;
+        long myLong = 1000000000L;
+        float myFloat = 3.14f;
+        double myDouble = 3.14159265359;
+        boolean myBoolean = true;
+        char myChar = 'A';
+
+        System.out.println("Byte: " + myByte);
+        System.out.println("Short: " + myShort);
+        System.out.println("Int: " + myInt);
+        System.out.println("Long: " + myLong);
+        System.out.println("Float: " + myFloat);
+        System.out.println("Double: " + myDouble);
+        System.out.println("Boolean: " + myBoolean);
+        System.out.println("Char: " + myChar);
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+//program to reincreament value using prefix and postfix(unary operators)//
+
+
+public class UnaryOpe {
+    public static void main(String args[]) {
+        int a = 4;
+        int x, y;
+
+        x = a++; // Post-increment: x gets 4, then a becomes 5
+        System.out.println("x = " + x); // x = 4
+        System.out.println("a = " + a); // a = 5
+
+        y = ++a; // Pre-increment: a becomes 6, then y gets 6
+        System.out.println("y = " + y); // y = 6
+        System.out.println("a = " + a); // a = 6
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+import java.util.Scanner;   
+
+public class addition
+{
+public static void main(String args[])
+{
+int x,y,sum;
+//if you want to get input from user then use Scanner//
+Scanner myObj = new Scanner(System.in);
+
+System.out.println("Type a number:");
+x=myObj.nextInt();
+
+System.out.println("Type another number");
+y=myObj.nextInt();
+
+sum = x+y;
+System.out.println("Sum is: " +sum);
+}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+//to use global variable in java//
+
+import java.io.*;
+
+class global {
+public static String geek = "Sudip Khatiwada";
+public static void main (String[] args)
+{
+System.out.println("Geek Name is: " +global.geek);
+}
+}
+--------------------------------------------------------------------------------------------------------------------
+public class MarksCalculator {
+    public static void main(String[] args) {
+        // Predefined marks for 3 subjects
+        int dsa = 78;
+        int oops = 45;
+        int coa = 30;
+
+        // Calculate total and average marks
+        int totalMarks = dsa + oops + coa;
+        double averageMarks = totalMarks /3;
+
+        
+        System.out.println("Total Marks: " + totalMarks);
+        System.out.println("Average Marks: " + averageMarks);
+
+        // Determine division based on average marks
+        if (averageMarks >= 70) {
+            System.out.println("First Division");
+        } else if (averageMarks >= 50) {
+            System.out.println("Second Division");
+        } else if (averageMarks >= 40) {
+            System.out.println("Third Division");
+        } else {
+            System.out.println("Tw Muji Fail Vayis");
+        }
+    }
+}
+
+
+
+
+
+

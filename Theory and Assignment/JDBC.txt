@@ -1,0 +1,51 @@
+***JDBC****
+
+
+- A type of java driver to  establish connectivity from java API to MYSQL database. 
+
+It completed in 5 steps:
+1) Register the driver class: User can load the driver on register by use of Class.forName() method.  
+						 -> Eg: Class.forName("oracle.jdbc.driver.OracleDriver");
+
+2) Create the connection object: The getConnection() method of DriverManager class is used to establish connection with MySQLdatabase.
+						-> eg: Connection con = DriverManager.getConnection ("jdbc:oracle:thin:@localhost:1521:xe", "system", "password"):
+
+3) Create the statement object: The createStatement() method of Connection interface is used to create the statement.
+						-> The object of statement is responsible to execute queries with the database. 
+						->  public Statement createStatement() throws SQLException
+						-> Statement stmt = con.createStatement();
+
+4) ResultSet (Exceute the query) : User can access the raw data from physical table by using executeQuery() method.
+						-> eg:ResultSet rs = stmt.executeQuery("select * from emp");
+
+5) Close the connection: By closing connection object statement and ResultSet will be closed automatically. 
+				-> The close() method of connection interface is used to close the connection.
+				-> eg:  rs.Close() , stmt.Close() or con.Close()
+
+
+-----------------------		----------------------------- 		-----------------------------		-------------------------------------		------------------------------		------------------------------------------
+								
+																	Types of  JDBC(Java DataBase Connectivity)
+
+TYPE 1 DRIVER (JDBC : ODBC BRIDGE DRIVER) :
+->  Data is transmitted betn JAVA API to MYSQL Database with presence of Bridge because bridge is responsible for exchange of data b/w ODBC(Open Database Connectivity) and JDBC.
+-> ODBC works from bridge to database.
+-> JDBC works from Bridge to Java API. It uses console, windows and web applications.
+
+
+TYPE 2 DRIVER (Native API): 
+-> It is located beside Java API therefore it doesn't control event handling on database.
+-> User can handle text alphanumeric and some symbolic instructions by use of JAVA NATIVE API DRIVER.
+
+
+TYPE 3 NET PURE JAVA DRIVER : 
+-> It is expensive and high secured.
+-> It uses a console, windows and web applications.
+-> Data is transmitted b/w SQL server database to type 3 server by middleware server.
+-> It include Type 1,2 and 4 in middleware server.
+-> This driver exchanges data b/w Middleware to JAVA API.
+
+TYPE 4 100% JAVA DRIVER:
+-> 
+
+

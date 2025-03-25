@@ -1,0 +1,28 @@
+-------------------------------->>>>>>>>SWING<<<<<<<<-----------------------------
+-->"Swing" refers to a graphical user interface (GUI) toolkit. 
+-->Swing is a part of Java Foundation Classes (JFC).
+-->It's used to create desktop applications with graphical interfaces.
+
+---->>ADVANATAGES OF SWING<<----
+1)Platform Independence
+2)Lightweight Components
+3)Extensibility
+4)Maintainability
+5)Portability
+6)Flexibility
+7)Accessibility
+
+--> 4 methods in swing cycle<--
+1)add()
+2)setSize()
+3)setLayout()
+4)setVisible()
+
+--------------------------------------------------------------------------------------------------------------------
+
+-->NOTE: The "J" prefix (e.g., JButton, JLabel, JPanel) clearly distinguishes Swing components from their counterparts in the older AWT (Abstract Window Toolkit). AWT components typically lack this "J" prefix (e.g., Button, Label, Panel).
+
+------>>>>>ACTION LISTENER<<<<<------
+-->It is a method in SWING to  handle events like button clicks.checkbox,and radio buttons.
+-->actionPerformed(): It is another method to reply the response of actionlistener.
+                                        It is called automatically when an event occurs.

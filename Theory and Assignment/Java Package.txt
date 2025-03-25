@@ -1,0 +1,24 @@
+A Java Packages is a group of Similar type of classes, interfaces and sub-packages.
+
+Advantage of Java Package
+
+1) Java package is used to categorize the classes and interfaces so that they can be easily maintained.
+2) Java package provides access protection.
+3) It removes naming convention.
+
+-------Code---------
+
+
+package mypack;
+public class Simple {
+public static void main (String args[])
+{
+System.out.println("this is the sample package of java.");
+}
+}
+
+----------------------------------------------------------------------------Compilation: javac -d  . Simple.java
+
+
+
+

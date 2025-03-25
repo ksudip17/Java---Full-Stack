@@ -1,0 +1,20 @@
+---------------------------------->>>>>>>>>>>>>NETWORK SERVER<<<<<<<<<<<<<<<<<<<------------------------------
+first part is client and server data transfer.
+
+
+
+
+--> InetDemo<--
+1)getHostName() : To return the name of the host.
+2)getHostAddress(): To return the address of the host.
+
+-->URL(Uniform/Universal Resource Locator)DEMO<--
+METHODS:
+1)getProtocol-> to return the name of the protocol of DNS. It is by default linked http.(e.g., http, https, ftp).
+2)getHost()-> to rerurn the name of the host(DNS). (e.g., www.example.com).
+3)getPort()-> to return the port name,number of the URL. If no port is specified, it returns -1.
+4)getFile()-> to return file name,path of the URL.(e.g., /path/to/resource).
+
+actionListner()->  is a method in swing to push on control. Ether it is command button , checkbox or radio button.
+
+actionPerforn() -> to give response to actionListner.

@@ -1,0 +1,29 @@
+Collection--------------
+
+--it is a framework that provide redaymade arch. to manipulate of tasks by using object.
+--it is a framework in java.
+--it is also called MVC(Module View Control)
+
+1. Module 
+-> it is responsible to confiure the layout design of database.
+-> Such as oracle,SQL,MySQL, MonboDB etc.
+
+2. View 
+->it is used  to bulid the UI(User Interface)
+
+3.Control
+-> it is a event handler to control the action and task in b/w module and view.
+
+
+
+Feature of Collection------
+
+1.Visibility
+2.Quality
+3.Speed
+4.Maintenance
+
+
+
+ 
+

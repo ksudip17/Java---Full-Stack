@@ -1,0 +1,94 @@
+An interface is a Blueprint of a class. It has static constants and abstract methods.
+
+-- implement is a keyword to access the property of interface into outer class.
+--object is created by integration of interface and outer class into inner class.
+
+
+------------------------------------
+interface Shape {
+    void draw();
+}
+
+class Square implements Shape {
+    public void draw() {
+        System.out.println("drawing square:");
+    }
+}
+
+public class ppt {
+    public static void main(String[] args) {
+        Shape s1 = new Square();
+        s1.draw();
+    }
+}
+-----------------------------------------------
+
+//program to access of interface in multiple class to execute of application//
+
+interface Draw {
+    void draw();
+}
+
+class Rectangle implements Draw {
+    public void draw() {
+        System.out.println("Drawing rectangle :");
+    }
+}
+
+class Circle implements Draw {
+    public void draw() {
+        System.out.println("Drawing Circle :");
+    }
+}
+
+public class ppt {
+    public static void main(String[] args) {
+        Draw d1 = new Rectangle();
+        Draw d2 = new Circle();
+        d1.draw();
+        d2.draw();
+    }
+}
+
+-----------------------------------------------------------------------------
+//program to remove ambiguity in multiple inheritance by using interface
+
+interface Bank {
+    float rateofInterest();
+}
+
+class Muktinath implements Bank {
+    public float rateofInterest() {
+        return 8.5f;
+    }
+}
+
+class Nabil implements Bank {
+    public float rateofInterest() {
+        return 10.5f;
+    }
+}
+
+class NMB implements Bank {
+    public float rateofInterest() {
+        return 11.5f;
+    }
+}
+
+public class NRB {
+    public static void main(String[] args) {
+        Bank obj = new Muktinath();
+        Bank obj1 = new Nabil();
+        Bank obj2 = new NMB();
+        System.out.println("Muktinath ROI : " + obj.rateofInterest());
+        System.out.println("Nabil ROI : " + obj1.rateofInterest());
+        System.out.println("NMB ROI : " + obj2.rateofInterest());
+
+    }
+}
+--------------------------------------------------------------------------------
+
+
+
+
+
