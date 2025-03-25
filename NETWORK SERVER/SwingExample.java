@@ -6,7 +6,7 @@ public class SwingExample {
     public static void main(String[] args) {
         JFrame f = new JFrame();
 
-        JButton b = new JButton("thich muji");
+        JButton b = new JButton("Click here");
         b.setBounds(130, 100, 100, 40);
 
         f.add(b);

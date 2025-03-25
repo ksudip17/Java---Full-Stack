@@ -1,3 +1,4 @@
+
 //wap to label the button on frame using AWT //
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -6,7 +7,7 @@ import java.awt.event.WindowEvent;
 public class Button_Example {
     public static void main(String[] args) {
         Frame frame = new Frame("Example Button");
-        Button button = new Button("Daba Muji");
+        Button button = new Button("Click Me!");
         button.setBounds(80, 100, 64, 30);
         frame.add(button);
         frame.setSize(300, 300);
